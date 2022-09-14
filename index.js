@@ -225,16 +225,16 @@ console.log(exampleSeperator)
 //Η εμβέλεια της μεταβλητής "ανεβαίνει", δηλαδή εδώ το var είναι σαν να ορίζεται στην αρχή του function ακόμα και αν
 //το ορίσω μέσα στο if. Οι αναθέσεις όμως μένουν από το σημείο που τις δίνουμε και μετά, γιαυτό το πρώτο log
 //θα τυπώσει undefined
-function f() {
-    console.log(x);
+function fu() {
+    console.log(thenumber);
     if (true) {
-        var x = 42;
-        console.log(x);
+        var thenumber = 42;
+        console.log(thenumber);
     }
-    console.log(x);
+    console.log(thenumber);
 }
 
-f()
+fu()
 
 //το πρόβλημα διορθώνεται με τη χρήση της λέξης let, η οποία καθορίζει τις εμβέλειες όπως τις έχουμε συνηθίσει:
 function g() {
